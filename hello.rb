@@ -3,7 +3,7 @@ require 'sinatra'
 
 get '/' do
   # erb :hello
-  "Hello world"
+  "Hello Vasanth"
 end
 
 get '/:name' do
