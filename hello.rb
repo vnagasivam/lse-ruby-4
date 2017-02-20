@@ -2,7 +2,8 @@ require 'pony'
 require 'sinatra'
 
 get '/' do
-  erb :hello
+  # erb :hello
+  "Hello world"
 end
 
 get '/:name' do
@@ -21,7 +22,7 @@ post('/signup') do
       :authentication => :plain,
       # This is the Default SMTP Login from earlier:
       :user_name => ENV['MAILGUN_USERNAME'], # This is your Default Password:
-      :password => 'your password'
+      :password => ENV['MAILGUN_PASSWORD']
     }
   }
 
